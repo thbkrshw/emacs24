@@ -15,7 +15,7 @@
       ido-handle-duplicate-virtual-buffers 2
       ido-max-prospects 10)
 
-
+;; Org-mode
 (setq org-log-done t)
 
 (provide 'hl-misc)

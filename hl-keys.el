@@ -26,6 +26,12 @@
 (global-set-key (kbd "<f9>") 'previous-error)
 (global-set-key (kbd "<f10>") 'next-error)
 
+;; If OS X remap meta key
+(if (string-match "darwin" system-configuration)
+(progn     (setq mac-option-key-is-meta nil)
+               (setq mac-command-key-is-meta t)
+               (setq mac-command-modifier 'meta)
+               (setq mac-option-modifier nil)))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
