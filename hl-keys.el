@@ -8,6 +8,7 @@
 (global-set-key (kbd "C-x C-i") 'ido-imenu)
 
 (global-set-key (kbd "C-=") 'er/expand-region)
+(global-set-key (kbd "C-+") 'er/contract-region)
 
 ;; Smex
 (global-set-key (kbd "M-x") 'smex)

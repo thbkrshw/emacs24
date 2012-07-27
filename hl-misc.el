@@ -1,5 +1,7 @@
 (show-paren-mode 1)
 
+(setq inhibit-startup-screen t)
+
 (require 'ido)
 (require 'ido-ubiquitous)
 (ido-mode t)
@@ -13,5 +15,7 @@
       ido-handle-duplicate-virtual-buffers 2
       ido-max-prospects 10)
 
+
+(setq org-log-done t)
 
 (provide 'hl-misc)
