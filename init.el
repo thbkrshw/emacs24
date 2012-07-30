@@ -7,7 +7,7 @@
 (add-to-list 'load-path "~/.emacs.d")
 
 ;; Hide GUI Stuff early
-(dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
+(dolist (mode '(tool-bar-mode scroll-bar-mode))
   (when (fboundp mode) (funcall mode -1)))
 
 (mapc 'require '(uniquify hl-package hl-misc hl-defuns hl-win hl-keys))

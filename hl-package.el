@@ -1,10 +1,12 @@
 (require 'package)
+
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+             '("melpa" . "http://melpa.milkbox.net/packages/"))
 (add-to-list 'package-archives
-'("ELPA" . "http://tromey.com/elpa/") t)
+	     '("ELPA" . "http://tromey.com/elpa/"))
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -20,6 +22,5 @@
 
 (setq smex-save-file (concat user-emacs-directory ".smex-items"))
 (smex-initialize)
-
 
 (provide 'hl-package)
