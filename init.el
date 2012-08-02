@@ -17,6 +17,4 @@
 (setq system-config (concat user-emacs-directory system-name ".el"))
 (when (file-exists-p system-config) (load system-config))
 
-;;(setq url-proxy-services '(("no_proxy" . "work\\.com")
-;;                          ("http" . "p-goodway:3128")))
 
