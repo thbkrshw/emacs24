@@ -29,4 +29,11 @@
    version-control t)       ; use versioned backups
 
 
+
+;; Tramp default configuration
+(when (string-equal "windows-nt" system-type) (setq tramp-default-method "plink"))
+
+
 (provide 'hl-misc)
+
+
