@@ -32,4 +32,7 @@
 (add-hook 'css-mode-hook 'rainbow-mode)
 
 
+(require 'dired+)
+
+
 (provide 'hl-package)
