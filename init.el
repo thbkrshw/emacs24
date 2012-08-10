@@ -10,7 +10,7 @@
 (dolist (mode '(tool-bar-mode scroll-bar-mode))
   (when (fboundp mode) (funcall mode -1)))
 
-(mapc 'require '(uniquify hl-package hl-misc hl-defuns hl-win hl-keys hl-mode-line))
+(mapc 'require '(uniquify hl-package hl-misc hl-defuns hl-win hl-keys hl-mode-line hl-vendor))
 
 
 ;; Load 
