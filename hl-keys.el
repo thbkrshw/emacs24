@@ -37,4 +37,7 @@
 
 
 
+;; Setup shortcut for ace-jump-mode
+(global-set-key (kbd "C-²") 'ace-jump-mode)
+
 (provide 'hl-keys)
