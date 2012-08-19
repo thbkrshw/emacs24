@@ -4,7 +4,7 @@
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
   (set-font "Consolas" 8)
-  (require 'solarized-light-theme))
+  (require 'solarized-dark-theme))
 
 
 (provide 'hl-win)
