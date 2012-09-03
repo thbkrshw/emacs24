@@ -1,5 +1,5 @@
 (show-paren-mode 1)
-
+(setq visible-bell 'top-bottom)
 (setq inhibit-startup-screen t)
 
 (require 'ido)

@@ -13,6 +13,16 @@
 (mapc 'require '(uniquify hl-package hl-misc hl-defuns hl-win hl-keys hl-mode-line hl-vendor))
 
 
+(setq auto-mode-alist
+      (append
+       '(
+	 ("\\.js\\'" . js2-mode)
+	 ("\\.php\\'" . php-mode)
+
+	 )
+       auto-mode-alist))
+
+
 ;; Load 
 (setq system-config (concat user-emacs-directory system-name ".el"))
 (when (file-exists-p system-config) (load system-config))

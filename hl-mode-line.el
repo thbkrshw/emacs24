@@ -57,5 +57,10 @@
 	       ;; "%-" ;; fill with '-'
 	       ))
 
+(set-face-attribute  'mode-line
+                 nil 
+                 :foreground "gray80"
+                 :background "gray10" 
+                 :box '(:line-width 1 :style released-button))
 
 (provide 'hl-mode-line)
