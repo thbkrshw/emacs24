@@ -6,5 +6,8 @@
   (set-font "Consolas" 8)
   (require 'solarized-dark-theme))
 
+(global-linum-mode)
+(global-hl-line-mode)
+
 
 (provide 'hl-win)
