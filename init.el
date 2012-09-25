@@ -3,6 +3,12 @@
 (when (file-exists-p proxy) (load proxy))
 
 
+;; Set UTF8 encoding
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+(set-language-environment 'utf-8)
+
 ;; (cd "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d")
 
