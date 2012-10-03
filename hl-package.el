@@ -13,7 +13,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(smex full-ack sass-mode expand-region ido-ubiquitous idomenu php-mode rainbow-mode solarized-theme yaml-mode smex js2-mode dired+ dired-single mark-multiple ace-jump-mode coffee-mode)
+(defvar my-packages '(smex full-ack sass-mode expand-region ido-ubiquitous idomenu php-mode rainbow-mode solarized-theme yaml-mode smex js2-mode dired+ dired-single mark-multiple ace-jump-mode coffee-mode autopair)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -32,6 +32,11 @@
 
 
 (require 'dired+)
+(setq diredp-find-file-reuse-dir-buffer t)
+
+
+;; Autopair
+(autopair-global-mode)
 
 
 (provide 'hl-package)
