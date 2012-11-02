@@ -1,5 +1,5 @@
 (show-paren-mode 1)
-
+(setq visible-bell 'top-bottom)
 (setq inhibit-startup-screen t)
 
 (require 'ido)
@@ -32,6 +32,14 @@
 
 ;; Tramp default configuration
 (when (string-equal "windows-nt" system-type) (setq tramp-default-method "plink"))
+
+
+;; Pretty lambda
+(font-lock-add-keywords
+ 'js-mode `(("\\(function *\\)("
+	     (0 (progn (compose-region (match-beginning 1)
+				       (match-end 1) "\u0192")
+		       nil)))))
 
 
 (provide 'hl-misc)
