@@ -4,7 +4,7 @@
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
   (set-font "Consolas" 8)
-  (load-theme 'solarized-light))
+  (load-theme 'solarized-light t))
 
 ;; (global-linum-mode)
 ;; (global-hl-line-mode)
