@@ -4,10 +4,10 @@
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
   (set-font "Consolas" 8)
-  (require 'zenburn-theme))
+  (load-theme 'wombat))
 
-(global-linum-mode)
-(global-hl-line-mode)
+;; (global-linum-mode)
+;; (global-hl-line-mode)
 
 
 (provide 'hl-win)

@@ -9,7 +9,7 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 
-(activate-input-method "latin-1-alt-postfix")
+;; (activate-input-method "latin-1-alt-postfix")
 ;; (set-language-environment 'utf-8)
 
 ;; (cd "~/.emacs.d")
