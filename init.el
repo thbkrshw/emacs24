@@ -32,6 +32,9 @@
        auto-mode-alist))
 
 
+ (setq abbrev-file-name             ;; tell emacs where to read abbrev
+        "~/.emacs.d/abbrev_defs")    ;; definitions from...
+
 ;; Load 
 (setq system-config (concat user-emacs-directory system-name ".el"))
 (when (file-exists-p system-config) (load system-config))
