@@ -15,8 +15,17 @@
       ido-handle-duplicate-virtual-buffers 2
       ido-max-prospects 10)
 
+;; Abbreviation
+(setq save-abbrevs t)
+
+;; Ace jump mode
+(autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
+(define-key global-map (kbd "C-c C-SPC") 'ace-jump-mode)
+
 ;; Org-mode
 (setq org-log-done t)
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
 
 ;; Backup management
 (setq
@@ -42,6 +51,11 @@
 		       nil)))))
 
 
+
+
+
+(setq smex-save-file (concat user-emacs-directory ".smex-items"))
+(smex-initialize)
+
+
 (provide 'hl-misc)
-
-

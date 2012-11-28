@@ -2,6 +2,7 @@
 (setq proxy (concat user-emacs-directory "proxy.el"))
 (when (file-exists-p proxy) (load proxy))
 
+(server-start)
 
 ;; Set UTF8 encoding
 (prefer-coding-system 'utf-8)
@@ -19,7 +20,7 @@
 (dolist (mode '(tool-bar-mode scroll-bar-mode))
   (when (fboundp mode) (funcall mode -1)))
 
-(mapc 'require '(uniquify hl-package hl-misc hl-defuns hl-win hl-keys hl-mode-line hl-vendor))
+(mapc 'require '(uniquify hl-package hl-misc hl-defuns hl-win hl-keys hl-mode-line hl-vendor hl-hook))
 
 
 (setq auto-mode-alist
@@ -32,6 +33,6 @@
        auto-mode-alist))
 
 
-;; Load 
+;; Load
 (setq system-config (concat user-emacs-directory system-name ".el"))
 (when (file-exists-p system-config) (load system-config))
