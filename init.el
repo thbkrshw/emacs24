@@ -10,7 +10,7 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 
-(activate-input-method "latin-1-alt-postfix")
+;; (activate-input-method "latin-1-alt-postfix")
 ;; (set-language-environment 'utf-8)
 
 ;; (cd "~/.emacs.d")
@@ -33,6 +33,9 @@
        auto-mode-alist))
 
 
-;; Load
+(setq abbrev-file-name             ;; tell emacs where to read abbrev
+        "~/.emacs.d/abbrev_defs")    ;; definitions from...
+
+
 (setq system-config (concat user-emacs-directory system-name ".el"))
 (when (file-exists-p system-config) (load system-config))

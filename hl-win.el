@@ -3,14 +3,11 @@
   (tooltip-mode -1)
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
-  (set-font "Consolas" 8)
-  ;; (require 'zenburn-theme))
-)
+  (set-font "Consolas" 8))
 
+(load-theme 'solarized-light t)
 
-(load-theme 'wombat)
 ;; (global-linum-mode)
 ;; (global-hl-line-mode)
-
 
 (provide 'hl-win)
