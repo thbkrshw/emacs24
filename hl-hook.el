@@ -1,7 +1,10 @@
+;; Remove useless spaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; Make script executable on save
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 
-;; Fix PHP arrays indentation 
+;; Fix PHP arrays indentation
 (add-hook 'php-mode-hook (lambda ()
     (defun ywb-php-lineup-arglist-intro (langelem)
       (save-excursion

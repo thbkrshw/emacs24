@@ -58,4 +58,7 @@
 (smex-initialize)
 
 
+;; Uniquify conf
+(setq uniquify-buffer-name-style 'forward)
+
 (provide 'hl-misc)
