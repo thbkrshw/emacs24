@@ -13,7 +13,24 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(full-ack sass-mode expand-region ido-ubiquitous idomenu php-mode rainbow-mode solarized-theme yaml-mode smex js2-mode dired+ dired-single mark-multiple ace-jump-mode coffee-mode autopair smex icicles)
+(defvar my-packages '(
+		      full-ack
+		      sass-mode
+		      expand-region
+		      ido-ubiquitous
+		      idomenu php-mode
+		      rainbow-mode
+		      solarized-theme
+		      yaml-mode smex
+		      js2-mode dired+
+		      dired-single
+		      mark-multiple
+		      ace-jump-mode
+		      coffee-mode
+		      autopair
+		      smex
+		      icicles
+		      rainbow-delimiters)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -27,6 +44,8 @@
 ;; Load rainbow mode when editing css file
 (add-hook 'css-mode-hook 'rainbow-mode)
 
+;; Load rainbow delimiters mode when programming
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 (require 'dired+)
 (setq diredp-find-file-reuse-dir-buffer t)
