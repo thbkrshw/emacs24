@@ -3,9 +3,9 @@
   (tooltip-mode -1)
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
-  (set-font "Consolas" 8))
+  (set-font "ProggyOpti" 11))
 
-(load-theme 'solarized-light t)
+(load-theme 'wombat t)
 
 ;; (global-linum-mode)
 ;; (global-hl-line-mode)
