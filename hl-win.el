@@ -3,11 +3,11 @@
   (tooltip-mode -1)
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
-  (set-font "Consolas" 8)
-  (require 'zenburn-theme))
+  (set-font "ProggyOpti" 11))
 
-(global-linum-mode)
-(global-hl-line-mode)
+(load-theme 'wombat t)
 
+;; (global-linum-mode)
+;; (global-hl-line-mode)
 
 (provide 'hl-win)
