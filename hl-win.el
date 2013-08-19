@@ -5,9 +5,9 @@
   (blink-cursor-mode -1)
   (set-font "ProggyOpti" 11))
 
-(load-theme 'wombat t)
+(load-theme 'leuven t)
 
 ;; (global-linum-mode)
-;; (global-hl-line-mode)
+(global-hl-line-mode)
 
 (provide 'hl-win)

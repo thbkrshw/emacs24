@@ -13,16 +13,17 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(
-		      full-ack
+(defvar my-packages '(full-ack
 		      sass-mode
 		      expand-region
 		      ido-ubiquitous
-		      idomenu php-mode
+		      idomenu
+		      php-mode
 		      rainbow-mode
-		      solarized-theme
-		      yaml-mode smex
-		      js2-mode dired+
+		      yaml-mode
+		      smex
+		      js2-mode
+		      dired+
 		      dired-single
 		      mark-multiple
 		      ace-jump-mode
@@ -30,7 +31,12 @@
 		      autopair
 		      smex
 		      icicles
-		      rainbow-delimiters)
+		      rainbow-delimiters
+		      leuven-theme
+		      flycheck
+		      flycheck-color-mode-line
+		      web-mode ;; simple mode for template files
+		      )
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
