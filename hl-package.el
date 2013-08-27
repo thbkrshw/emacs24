@@ -14,13 +14,14 @@
 
 ;; Add in your own as you wish:
 (defvar my-packages '(full-ack
-		      sass-mode
+		      ;; sass-mode
 		      expand-region
-		      ido-ubiquitous
-		      idomenu
+		      ;; ido-ubiquitous
+		      ;; idomenu
 		      php-mode
 		      rainbow-mode
-		      yaml-mode
+		      rainbow-delimiters
+		      ;; yaml-mode
 		      smex
 		      js2-mode
 		      dired+
@@ -31,7 +32,6 @@
 		      autopair
 		      smex
 		      icicles
-		      rainbow-delimiters
 		      leuven-theme
 		      flycheck
 		      flycheck-color-mode-line
