@@ -27,6 +27,7 @@
 		 hl-win
 		 hl-keys
 		 ;; hl-mode-line
+		 ;; hl-vendor
 		 hl-hook))
 
 
