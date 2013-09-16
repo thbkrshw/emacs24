@@ -31,7 +31,7 @@
 		      coffee-mode
 		      autopair
 		      smex
-		      icicles
+		      ;; icicles
 		      leuven-theme
 		      flycheck
 		      flycheck-color-mode-line
