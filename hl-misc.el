@@ -3,9 +3,9 @@
 (setq inhibit-startup-screen t)
 
 (require 'ido)
-;(require 'ido-ubiquitous)		
+;(require 'ido-ubiquitous)
 (ido-mode t)
-;(ido-ubiquitous t)		       
+;(ido-ubiquitous t)
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t
       ido-auto-merge-work-directories-length nil
@@ -45,7 +45,7 @@
 
 ;; Pretty lambda
 (font-lock-add-keywords
- 'js-mode `(("\\(function *\\)("
+ 'js2-mode `(("\\(function *\\)("
 	     (0 (progn (compose-region (match-beginning 1)
 				       (match-end 1) "\u0192")
 		       nil)))))
