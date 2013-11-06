@@ -8,6 +8,6 @@
 (load-theme 'wombat t)
 
 ;; (global-linum-mode)
-(global-hl-line-mode)
+;; (global-hl-line-mode)
 
 (provide 'hl-win)
