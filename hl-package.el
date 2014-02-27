@@ -13,7 +13,9 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(full-ack
+(defvar my-packages '(
+		      ;; full-ack
+		      ack-and-a-half
 		      ;; sass-mode
 		      expand-region
 		      ;; ido-ubiquitous
@@ -22,7 +24,7 @@
 		      rainbow-mode
 		      rainbow-delimiters
 		      ;; yaml-mode
-		      ;; smex		
+		      ;; smex
 		      js2-mode
 		      dired+
 		      dired-single
@@ -35,6 +37,11 @@
 		      flycheck
 		      flycheck-color-mode-line
 		      web-mode ;; simple mode for template files
+		      helm
+		      projectile
+		      helm-projectile
+		      zenburn-theme
+		      grizzl
 		      )
   "A list of packages to ensure are installed at launch.")
 
@@ -81,3 +88,23 @@
 (add-hook 'web-mode-hook
 	  #'(lambda ()
 	      (autopair-mode -1)))
+
+;; Helm
+(require 'helm)
+(require 'helm-config)
+
+(global-set-key (kbd "C-c h") 'helm-command-prefix)
+(global-unset-key (kbd "C-x c"))
+
+
+;; Projectile
+
+; set method to native, seems to work even with Windows
+(setq projectile-indexing-method 'native)
+(setq projectile-enable-caching t)
+
+; set grizzl as the completion method
+(setq projectile-completion-system 'grizzl)
+
+; hooks
+(add-hook 'php-mode-hook 'projectile-mode)
