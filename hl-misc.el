@@ -23,9 +23,9 @@
 (define-key global-map (kbd "C-c C-SPC") 'ace-jump-mode)
 
 ;; Org-mode
-(setq org-log-done t)
-(define-key global-map "\C-cl" 'org-store-link)
-(define-key global-map "\C-ca" 'org-agenda)
+;(setq org-log-done t)
+;(define-key global-map "\C-cl" 'org-store-link)
+;(define-key global-map "\C-ca" 'org-agenda)
 
 ;; Backup management
 (setq
@@ -54,8 +54,8 @@
 
 
 
-(setq smex-save-file (concat user-emacs-directory ".smex-items"))
-(smex-initialize)
+;; (setq smex-save-file (concat user-emacs-directory ".smex-items"))
+;; (smex-initialize)
 
 
 ;; Uniquify conf

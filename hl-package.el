@@ -22,7 +22,7 @@
 		      rainbow-mode
 		      rainbow-delimiters
 		      ;; yaml-mode
-		      smex
+		      ;; smex		
 		      js2-mode
 		      dired+
 		      dired-single
@@ -30,7 +30,6 @@
 		      ace-jump-mode
 		      coffee-mode
 		      autopair
-		      smex
 		      ;; icicles
 		      leuven-theme
 		      flycheck
