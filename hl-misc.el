@@ -27,6 +27,7 @@
 ;(define-key global-map "\C-cl" 'org-store-link)
 ;(define-key global-map "\C-ca" 'org-agenda)
 
+
 ;; Backup management
 (setq
    backup-by-copying t      ; don't clobber symlinks

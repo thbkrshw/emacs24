@@ -5,7 +5,7 @@
   (blink-cursor-mode -1)
   (set-font "Consolas" 8))
 
-(load-theme 'wombat t)
+(load-theme 'leuven t)
 
 ;; (global-linum-mode)
 ;; (global-hl-line-mode)
