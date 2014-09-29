@@ -10,12 +10,6 @@
 (global-set-key (kbd "C-=") 'er/expand-region)
 (global-set-key (kbd "C-+") 'er/contract-region)
 
-;; Smex
-;; (global-set-key (kbd "M-x") 'smex)
-;; (global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; (global-set-key "\C-x\C-m" 'smex)
-;; (global-set-key "\C-c\C-m" 'smex)
-
 (define-key ctl-x-map   "d" 'diredp-dired-files)
 (define-key ctl-x-4-map "d" 'diredp-dired-files-other-window)
 

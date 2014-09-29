@@ -14,6 +14,7 @@
 
 ;; Add in your own as you wish:
 (defvar my-packages '(
+		      arduino-mode
 		      ;; full-ack
 		      ack-and-a-half
 		      ;; sass-mode
@@ -24,7 +25,6 @@
 		      rainbow-mode
 		      rainbow-delimiters
 		      ;; yaml-mode
-		      ;; smex
 		      js2-mode
 		      dired+
 		      dired-single
