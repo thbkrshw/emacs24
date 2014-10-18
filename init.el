@@ -1,7 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d")
 
 ;; Setup proxy if needed
-(setq proxy-config (concat user-emacs-directory proxy ".el"))
+(setq proxy-config (concat user-emacs-directory "proxy" ".el"))
 (when (file-exists-p proxy-config) (load proxy-config))
 
 ;; One instance to rule them all
