@@ -1,10 +1,10 @@
 (add-to-list 'load-path "~/.emacs.d")
-(require 'hl-defuns)
 
-;; Load host specific config file
-(setq system-config (concat user-emacs-directory system-name ".el"))
-(when (file-exists-p system-config) (load system-config))
+;; Setup proxy if needed
+(setq proxy-config (concat user-emacs-directory proxy ".el"))
+(when (file-exists-p proxy-config) (load proxy-config))
 
+;; One instance to rule them all
 (server-start)
 
 ;; Set UTF8 encoding
@@ -21,7 +21,7 @@
 (mapc 'require '(uniquify
 		 hl-package
 		 hl-misc
-;;		 hl-defuns
+		 hl-defuns
 		 hl-win
 		 hl-keys
 		 hl-mode-line
@@ -41,3 +41,7 @@
 
 (setq abbrev-file-name             ;; tell emacs where to read abbrev
         "~/.emacs.d/abbrev_defs")    ;; definitions from...
+
+;; Load host specific config file
+(setq system-config (concat user-emacs-directory system-name ".el"))
+(when (file-exists-p system-config) (load system-config))
