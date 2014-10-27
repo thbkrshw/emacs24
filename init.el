@@ -1,7 +1,8 @@
-(add-to-list 'load-path "~/.emacs.d")
+(setq user-files (expand-file-name "~/.emacs.d/lisp/"))
+(add-to-list 'load-path user-files)
 
 ;; Setup proxy if needed
-(setq proxy-config (concat user-emacs-directory "proxy" ".el"))
+(setq proxy-config (concat user-files "proxy.el"))
 (when (file-exists-p proxy-config) (load proxy-config))
 
 ;; One instance to rule them all
@@ -43,5 +44,5 @@
         "~/.emacs.d/abbrev_defs")    ;; definitions from...
 
 ;; Load host specific config file
-(setq system-config (concat user-emacs-directory system-name ".el"))
+(setq system-config (concat user-files system-name ".el"))
 (when (file-exists-p system-config) (load system-config))
