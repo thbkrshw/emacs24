@@ -42,7 +42,7 @@
 		      helm-projectile
 		      zenburn-theme
 		      grizzl
-		      )
+		      ace-window)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -66,12 +66,7 @@
 ;; Autopair
 (autopair-global-mode)
 
-
-(provide 'hl-package)
-
-
 ;; Web mode
-
 (require 'web-mode)
 
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
@@ -116,3 +111,9 @@
 
 ; hooks
 (add-hook 'php-mode-hook 'projectile-mode)
+
+;; ace-window
+(global-set-key (kbd "M-p") 'ace-window)
+(setq aw-keys '(?q ?s ?d ?f ?g ?h ?j ?k ?l ?m))
+
+(provide 'hl-package)
