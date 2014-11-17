@@ -5,3 +5,6 @@ server/
 tramp
 url/
 .smex*
+ac-comphist.dat
+eshell/
+image-dired

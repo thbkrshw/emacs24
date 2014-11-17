@@ -14,6 +14,7 @@
 
 ;; Add in your own as you wish:
 (defvar my-packages '(
+		      restclient
 		      arduino-mode
 		      ;; full-ack
 		      ack-and-a-half
