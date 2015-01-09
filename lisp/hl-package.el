@@ -39,7 +39,8 @@
 		      helm-projectile
 		      zenburn-theme
 		      grizzl
-		      ace-window)
+		      ace-window
+		      go-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -112,5 +113,10 @@
 ;; ace-window
 (global-set-key (kbd "M-p") 'ace-window)
 (setq aw-keys '(?q ?s ?d ?f ?g ?h ?j ?k ?l ?m))
+
+
+;; go mode
+(setq gofmt-command "goimports")
+(add-hook 'before-save-hook 'gofmt-before-save)
 
 (provide 'hl-package)
