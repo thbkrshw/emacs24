@@ -82,6 +82,11 @@
 	  #'(lambda ()
 	      (autopair-mode -1)))
 
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2))
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
 ;; Helm
 (require 'helm)
 (require 'helm-config)
@@ -100,9 +105,15 @@
 (global-set-key (kbd "C-c h o") 'helm-occur)
 
 
+
+
+
 (helm-mode 1)
 
 ;; Projectile
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
 
 ; set method to native, seems to work even with Windows
 (setq projectile-indexing-method 'native)
@@ -118,7 +129,7 @@
 (global-set-key (kbd "M-p") 'ace-window)
 (setq aw-keys '(?q ?s ?d ?f ?g ?h ?j ?k ?l ?m))
 
-
+(global-set-key (kbd "M-o") 'helm-projectile)
 ;; go mode
 (setq gofmt-command "goimports")
 (add-hook 'before-save-hook 'gofmt-before-save)
