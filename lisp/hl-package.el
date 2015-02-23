@@ -38,7 +38,8 @@
 		      helm-projectile
 		      zenburn-theme
 		      grizzl
-		      ace-window)
+		      ace-window
+		      go-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -80,6 +81,11 @@
 	  #'(lambda ()
 	      (autopair-mode -1)))
 
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2))
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
 ;; Helm
 (require 'helm)
 (require 'helm-config)
@@ -87,13 +93,18 @@
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
 (global-unset-key (kbd "C-x c"))
 
-(setq helm-M-x-fuzzy-match t)
+
+(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
+(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
+(define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-m") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
 (setq helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match    t)
+(setq helm-M-x-fuzzy-match t)
+
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-x C-b") 'helm-mini)
 
@@ -109,6 +120,9 @@
 (helm-mode 1)
 
 ;; Projectile
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
 
 ; set method to native, seems to work even with Windows
 (setq projectile-indexing-method 'native)
@@ -123,5 +137,10 @@
 ;; ace-window
 (global-set-key (kbd "M-p") 'ace-window)
 (setq aw-keys '(?q ?s ?d ?f ?g ?h ?j ?k ?l ?m))
+
+(global-set-key (kbd "M-o") 'helm-projectile)
+;; go mode
+(setq gofmt-command "goimports")
+(add-hook 'before-save-hook 'gofmt-before-save)
 
 (provide 'hl-package)
