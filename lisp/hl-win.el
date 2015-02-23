@@ -3,7 +3,7 @@
   (tooltip-mode -1)
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
-  (set-font "Consolas" 8))
+  (set-font "Source Code Pro" 9))
 
 (load-theme 'leuven t)
 
