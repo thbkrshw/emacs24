@@ -53,14 +53,15 @@
 	       ;;                   (emacs-uptime "Uptime:%hh"))))
 	       ;; " --"
 	       ;; i don't want to see minor-modes; but if you want, uncomment this:
-	       ;; minor-mode-alist  ;; list of minor modes
-	       ;; "%-" ;; fill with '-'
+	       minor-mode-alist  ;; list of minor modes
+
+	      ;; "%-" ;; fill with '-'
 	       ))
 
 (set-face-attribute  'mode-line
-                 nil
-                 :foreground "gray10"
-                 :background "gray80"
-                 :box '(:line-width 1 :style released-button))
+		     nil
+		     :foreground "gray10"
+		     :background "gray80"
+		     :box '(:line-width 1 :style released-button))
 
 (provide 'hl-mode-line)

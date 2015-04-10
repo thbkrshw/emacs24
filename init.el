@@ -20,12 +20,13 @@
 
 ;; Load custom init files
 (mapc 'require '(uniquify
+		 hl-custom
 		 hl-package
 		 hl-misc
 		 hl-defuns
 		 hl-win
 		 hl-keys
-		 hl-mode-line
+		 ;; hl-mode-line
 		 ;; hl-vendor
 		 hl-hook))
 

@@ -27,7 +27,8 @@
 		      mark-multiple
 		      ace-jump-mode
 		      coffee-mode
-		      autopair
+		      smartparens
+		      smart-mode-line
 		      ;; icicles
 		      leuven-theme
 		      flycheck
@@ -60,8 +61,8 @@
 (setq diredp-find-file-reuse-dir-buffer t)
 
 
-;; Autopair
-(autopair-global-mode)
+;; Smart parens
+(smartparens-global-mode)
 
 ;; Web mode
 (require 'web-mode)
@@ -98,7 +99,7 @@
 (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
 (global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-x C-m") 'helm-M-x)
+;; (global-set-key (kbd "C-x C-m") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
 (setq helm-buffers-fuzzy-matching t
@@ -139,8 +140,11 @@
 (setq aw-keys '(?q ?s ?d ?f ?g ?h ?j ?k ?l ?m))
 
 (global-set-key (kbd "M-o") 'helm-projectile)
+(global-set-key (kbd "M-O") 'helm-projectile-switch-project)
+
 ;; go mode
 (setq gofmt-command "goimports")
 (add-hook 'before-save-hook 'gofmt-before-save)
+
 
 (provide 'hl-package)

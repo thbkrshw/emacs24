@@ -5,9 +5,13 @@
   (blink-cursor-mode -1)
   (set-font "Source Code Pro" 9))
 
-(load-theme 'leuven t)
+(load-theme 'darktooth t)
 
 ;; (global-linum-mode)
 ;; (global-hl-line-mode)
+
+;; smart mode line
+(sml/setup)
+
 
 (provide 'hl-win)

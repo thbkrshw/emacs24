@@ -43,4 +43,9 @@
 ;; Uniquify conf
 (setq uniquify-buffer-name-style 'forward)
 
+;; Abbrev
+(setq abbrev-file-name "~/.emacs.d/lisp/hl-abbrev.el")
+(setq save-abbrevs t)
+(setq-default abbrev-mode t) ;; load abbrev mode globally
+
 (provide 'hl-misc)
