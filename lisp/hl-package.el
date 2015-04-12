@@ -9,38 +9,39 @@
 
 ;; Add in your own as you wish:
 (defvar my-packages '(
-		      restclient
 		      arduino-mode
-		      ;; full-ack
-		      ack-and-a-half
-		      ;; sass-mode
-		      expand-region
-		      ;; ido-ubiquitous
-		      ;; idomenu
 		      php-mode
+		      js2-mode
+		      coffee-mode
+		      web-mode ;; simple mode for template files
+		      go-mode
+
+		      restclient
+
+		      expand-region
+
+		      smartparens
 		      rainbow-mode
 		      rainbow-delimiters
-		      ;; yaml-mode
-		      js2-mode
+
 		      dired+
 		      dired-single
-		      mark-multiple
-		      ace-jump-mode
-		      coffee-mode
-		      smartparens
-		      smart-mode-line
-		      ;; icicles
-		      leuven-theme
+
+		      ace-jump-mode	
+		      ace-window
+
 		      flycheck
-		      flycheck-color-mode-line
-		      web-mode ;; simple mode for template files
+		      ;; flycheck-color-mode-line 
+
 		      helm
 		      projectile
 		      helm-projectile
-		      zenburn-theme
 		      grizzl
-		      ace-window
-		      go-mode)
+	
+		      smart-mode-line
+		      darktooth-theme
+		      zenburn-theme
+		      )
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
