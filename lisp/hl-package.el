@@ -27,20 +27,22 @@
 		      dired+
 		      dired-single
 
-		      ace-jump-mode	
+		      ace-jump-mode
 		      ace-window
 
 		      flycheck
-		      ;; flycheck-color-mode-line 
+		      ;; flycheck-color-mode-line
 
 		      helm
 		      projectile
 		      helm-projectile
 		      grizzl
-	
+
 		      smart-mode-line
 		      darktooth-theme
 		      zenburn-theme
+
+		      paradox ;; package menu improvements
 		      )
   "A list of packages to ensure are installed at launch.")
 
@@ -100,7 +102,7 @@
 (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
 (global-set-key (kbd "M-x") 'helm-M-x)
-;; (global-set-key (kbd "C-x C-m") 'helm-M-x)
+(global-set-key (kbd "C-x C-m") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
 (setq helm-buffers-fuzzy-matching t
