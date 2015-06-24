@@ -4,8 +4,8 @@
 (global-set-key [(meta g)] 'goto-line)
 
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
-(global-set-key (kbd "C-x C-i") 'ido-imenu)
+(global-set-key (kbd "C-x C-m") 'execute-extended-command)
+;(global-set-key (kbd "C-x C-i") 'ido-imenu)
 
 (global-set-key (kbd "C-=") 'er/expand-region)
 (global-set-key (kbd "C-+") 'er/contract-region)
@@ -13,8 +13,6 @@
 (define-key ctl-x-map   "d" 'diredp-dired-files)
 (define-key ctl-x-4-map "d" 'diredp-dired-files-other-window)
 
-(global-set-key (kbd "<f11>") 'ack-same)
-(global-set-key (kbd "<f12>") 'ack)
 
 ;; Next/previous errors
 (global-set-key (kbd "<f9>") 'previous-error)
