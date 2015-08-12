@@ -12,6 +12,7 @@
 		      arduino-mode
 		      php-mode
 		      js2-mode
+		      json-reformat
 		      coffee-mode
 		      web-mode ;; simple mode for template files
 		      go-mode
@@ -41,8 +42,11 @@
 		      smart-mode-line
 		      darktooth-theme
 		      zenburn-theme
+		      leuven-theme
 
 		      paradox ;; package menu improvements
+
+		      highlight2clipboard
 		      )
   "A list of packages to ensure are installed at launch.")
 
@@ -58,14 +62,17 @@
 (add-hook 'css-mode-hook 'rainbow-mode)
 
 ;; Load rainbow delimiters mode when programming
-(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+;; (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 (require 'dired+)
 (setq diredp-find-file-reuse-dir-buffer t)
 
 
 ;; Smart parens
+(require 'smartparens-config)
 (smartparens-global-mode)
+(smartparens-strict-mode)
+(show-smartparens-global-mode t)
 
 ;; Web mode
 (require 'web-mode)
@@ -128,14 +135,14 @@
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
 
-; set method to native, seems to work even with Windows
+					; set method to native, seems to work even with Windows
 (setq projectile-indexing-method 'native)
 (setq projectile-enable-caching t)
 
-; set grizzl as the completion method
+					; set grizzl as the completion method
 (setq projectile-completion-system 'grizzl)
 
-; hooks
+					; hooks
 (add-hook 'php-mode-hook 'projectile-mode)
 
 ;; ace-window
@@ -149,5 +156,7 @@
 (setq gofmt-command "goimports")
 (add-hook 'before-save-hook 'gofmt-before-save)
 
+;; clipboard
+(global-set-key (kbd "<f8>") 'highlight2clipboard-copy-buffer-to-clipboard)
 
 (provide 'hl-package)

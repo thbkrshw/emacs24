@@ -1,6 +1,6 @@
 (global-set-key "\M-;" 'comment-dwim-line)
 
-(global-set-key (kbd "C-x C-b") 'buffer-menu-other-window)
+(global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 (global-set-key [(meta g)] 'goto-line)
 
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)

@@ -6,7 +6,13 @@
   (blink-cursor-mode -1)
   (set-font "Source Code Pro" 9))
 
-(load-theme 'darktooth t)
+;; (setq solarized-distinct-fringe-background t)
+;; (setq solarized-high-contrast-mode-line t)
+;; (setq solarized-use-more-italic t)
+
+;; (load-theme 'darktooth t)
+(load-theme 'leuven t)
+;; (load-theme 'solarized-dark t)
 
 (global-linum-mode)
 (global-hl-line-mode)
