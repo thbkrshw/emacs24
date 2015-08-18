@@ -4,7 +4,7 @@
   (menu-bar-mode -1)
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
-  (set-font "Source Code Pro" 9))
+  (set-font "Consolas" 10))
 
 ;; (setq solarized-distinct-fringe-background t)
 ;; (setq solarized-high-contrast-mode-line t)
@@ -14,10 +14,10 @@
 (load-theme 'leuven t)
 ;; (load-theme 'solarized-dark t)
 
-(global-linum-mode)
+;(global-linum-mode)
 (global-hl-line-mode)
 
-(setq scroll-margin 0
+(setq scroll-margin 1
       scroll-conservatively 100000
       scroll-preserve-screen-position 1)
 
@@ -34,7 +34,7 @@
 
 ;; saveplace remembers your location in a file when saving files
 (require 'saveplace)
-;; (setq save-place-file (expand-file-name "saveplace" prelude-savefile-dir))
+; (setq save-place-file (expand-file-name "saveplace" prelude-savefile-dir))
 ;; activate it for all buffers
 (setq-default save-place t)
 
