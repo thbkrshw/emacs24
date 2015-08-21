@@ -10,8 +10,8 @@
 ;; (setq solarized-high-contrast-mode-line t)
 ;; (setq solarized-use-more-italic t)
 
-;; (load-theme 'darktooth t)
-(load-theme 'leuven t)
+(load-theme 'darktooth t)
+;; (load-theme 'leuven t)
 ;; (load-theme 'solarized-dark t)
 
 ;(global-linum-mode)
