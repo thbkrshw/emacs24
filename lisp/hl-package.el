@@ -159,4 +159,6 @@
 ;; clipboard
 (global-set-key (kbd "<f8>") 'highlight2clipboard-copy-buffer-to-clipboard)
 
+(global-set)
+
 (provide 'hl-package)
