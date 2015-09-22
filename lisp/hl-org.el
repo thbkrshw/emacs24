@@ -1,5 +1,13 @@
 (require 'ox-latex)
 
+
+(setq org-log-done 'time)
+(setq org-closed-keep-when-no-todo t)
+
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
+
+
 (add-to-list 'org-latex-packages-alist '("T1" "fontenc"))
 (add-to-list 'org-latex-packages-alist '("defaultsans" "droidsans"))
 (add-to-list 'org-latex-packages-alist '("defaultmono" "droidmono"))
